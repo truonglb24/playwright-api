@@ -1,13 +1,16 @@
 /*
  - Create order -> Read order details -> Update order -> Delete order || CRUD
 */
+require('dotenv').config()
 const { test, expect } = require("@playwright/test");
 
 
 test('should be able to perform CRUD on post type', async ({request})=>{
     
     // Consstruct data
-    const baseUrl = "https://jsonplaceholder.typicode.com";
+    const baseUrl = process.env.BASE_URL;
+    console.log(baseUrl);
+    
     const postContent = {
         title: 'foo',
         body: 'bar',

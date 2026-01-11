@@ -10,5 +10,8 @@
   "scripts": {
     "test": "playwright test",
     "show-report": "playwright show-report"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
