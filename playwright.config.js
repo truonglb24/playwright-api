@@ -25,9 +25,10 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
+    ['allure-playwright'],
     ['./reporters/CustomReporter.js', { prefix: '[E2E]' }],
     ['html',{
-      open : 'always',
+      open : 'never',
       port : 9999
     }]
   ],

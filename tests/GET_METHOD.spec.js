@@ -18,6 +18,8 @@ test('should be able to send a GET method request', async({request})=>{
     expect(userId).toBeTruthy()
     expect(id).toBeTruthy()
     expect(title).toBeTruthy()
-    expect(body).toBeTruthy()
+
+    // NOTE: Marking this failed intentionally
+    expect(body).toBe("123123")
 
 });
