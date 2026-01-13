@@ -25,7 +25,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['list'],
-    ['./reporters/CustomerReporter.js', { prefix: '[E2E]' }],
+    ['./reporters/CustomReporter.js', { prefix: '[E2E]' }],
     ['html',{
       open : 'always',
       port : 9999
